@@ -173,7 +173,24 @@ body{
     
 }
 
-@media screen and (orientation: landscape) and (max-width: 767px){
+@media screen and (max-width: 912px){
+    .navegacion{
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .main-title{
+        top: 0%;
+    }
+
+    .galeria{
+        width: auto;
+        padding: 0px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 920px){
     .navegacion{
         height: fit-content;
     }
