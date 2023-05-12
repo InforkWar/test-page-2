@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(68, 67, 67);
     width: 100vw;
     height: 100vh;
 }
@@ -54,6 +54,7 @@ body{
     text-align: right;
     margin-right: 50px;
     padding-top: 10px;
+    /* width: clamp (200px, 60%, 400px); */
 }
 
 .item{
@@ -101,6 +102,37 @@ body{
     line-height: 35px;
 }
 
+.galeria{
+    display: grid;
+    width: 95%;
+    height: auto;
+    border: 10px ridge #764ba2;
+    margin: 30px auto;
+    grid-template-rows: repeat(3, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: dense;
+    gap: 10px 10px;
+    padding: 10px;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+}
+
+.pic{
+    color: white;
+    border: 3px solid black;
+    margin: 0.1px auto;
+   
+}
+
+.pic img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 /* ----------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------- */
 
@@ -115,13 +147,20 @@ body{
         left: 50%;
     }
 
+    .navegacion{
+        text-align: center;
+        padding: 0;
+    }
+
     .lista{
         top: 13%;
+        text-align: center;
+        margin-right: 0px;
     }
 
     .item a{
         font-size: 20px;
-        margin-left: 10px;
+        margin-left: 5px;
         
     }
     
