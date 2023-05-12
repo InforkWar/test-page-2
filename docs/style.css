@@ -172,3 +172,9 @@ body{
     }
     
 }
+
+@media screen and (orientation: landscape) and (max-width: 767px){
+    .navegacion{
+        height: fit-content;
+    }
+}
