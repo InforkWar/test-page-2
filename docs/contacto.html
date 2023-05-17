@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Contactost</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        
+        <img class="logo" src="imagenes/LogoNewEra.PNG" alt="logo">
+        <h1 class="main-title">New Era Pictures</h1>
+
+    </header>
+
+    <nav class="navegacion">
+        <ul class="lista">
+            <li class="item"><a href="index.html">Galería</a></li>
+            <li class="item"><a href="videos.html">Videos</a></li>
+            <li class="item"><a href="">Colecciones</a></li>
+            <li class="item"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <form class="form" action="https://formspree.io/f/xdovjbjv"
+    method="POST">
+        <div class="form_container">
+            <h2 class="form_title">Contáctame</h2>
+            <input type="text" class="form_input" placeholder="Nombre:" name="name">
+            <input type="email" class="form_input" placeholder="Email:" name="email">
+            <textarea class="form_input form_input--message" placeholder="Mensaje:" name="message"></textarea>
+
+            <input type="submit" value="enviar" class="form_cta">
+        </div>
+    </form>
+
+
+</body>
+</html>
